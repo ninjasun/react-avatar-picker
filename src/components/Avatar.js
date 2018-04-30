@@ -21,9 +21,10 @@ class Avatar extends Component {
 
 
     _onClick(e){
-        console.log("AVATAR event is: ", e);
+       // console.log("AVATAR event is: ", e);
 
         if (this.state.isActive){
+            this.props.handlePopup();
             return
         }
         const model = this.props.model;
@@ -65,7 +66,11 @@ class Avatar extends Component {
             this._onClick(event)
         }
 
-
+    }
+    /*TO DO*/
+    handleTouchTap(e){
+        console.log("AVATAR onTouchTap: ",e)
+        this._onClick(e)
     }
 
     render(){
@@ -75,7 +80,6 @@ class Avatar extends Component {
                     className={this.state.isActive ? 'avatarContainer ' + 'active' : 'avatarContainer'}
                     onClick={this._onClick}
                     tabIndex={this.state.isActive ? -1 : 0}
-
                     onKeyDown={this.keyPressed.bind(this)}
                 >
                     <div className={this.state.isLoading ? 'spinner' : 'hide'} />

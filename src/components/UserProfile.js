@@ -47,6 +47,12 @@ class UserProfile extends Component {
         }
     }
 
+    /*TO DO*/
+    handleTouchTap(e){
+        console.log("UserProfile touch tap: ",e)
+        if (e.button !== 0)  this._onClick(e)
+    }
+
     render(){
 
 
@@ -58,6 +64,7 @@ class UserProfile extends Component {
                 alt={this.props.model.label}
                 tabIndex='0'
                 onKeyPress={this.enterPressed.bind(this)}
+
 
             />
         )

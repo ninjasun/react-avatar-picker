@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 import 'normalize.css'
-
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import Popup from './Popup';
 import Avatar from './Avatar';
 import UserProfile from './UserProfile';
 
+injectTapEventPlugin();
+
+
+const AJAX_CALL_DELAY = 1000;
 
 class AvatarPicker extends Component {
     constructor(props) {
@@ -59,6 +63,13 @@ class AvatarPicker extends Component {
         //if model clicked is the same we have now
         let _self = this;
 
+        if (this.state.modelActive.id === model.id){
+            console.log("SAME AVATAR")
+            this.setState({
+                styleClass:'fadeOut'
+            })
+            return
+        }
 
         setTimeout( () => {
                 _self.setState({
@@ -67,7 +78,7 @@ class AvatarPicker extends Component {
 
                 });
             }
-        ,1000)
+        , AJAX_CALL_DELAY)
     }
 
     render() {
