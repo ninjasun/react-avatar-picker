@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import { KEYCODE_ENTER, MOUSE_LEFT_CLICK_EVENT} from "../constant/constant";
+
 class UserProfile extends Component {
 
     constructor(props) {
@@ -40,8 +42,7 @@ class UserProfile extends Component {
     }
     enterPressed(event) {
         var code = event.keyCode || event.which;
-        if(code === 13) { //13 is the enter keycode
-            //Do stuff in here
+        if(code === KEYCODE_ENTER) {
 
             this._onClick(event)
         }
@@ -49,23 +50,21 @@ class UserProfile extends Component {
 
     /*TO DO*/
     handleTouchTap(e){
-        console.log("UserProfile touch tap: ",e)
-        if (e.button !== 0)  this._onClick(e)
+        //console.log("UserProfile touch tap: ",e)
+        if (e.button !== MOUSE_LEFT_CLICK_EVENT)  this._onClick(e)
     }
 
     render(){
-
+        const { model } = this.props;
 
         return(
             <img
-                src={this.props.model.src}
+                src={model.src}
                 className={this.state.isActive ? 'active user-profile' : 'user-profile user-profile-hover'}
                 onClick={this._onClick}
-                alt={this.props.model.label}
+                alt={model.label}
                 tabIndex='0'
                 onKeyPress={this.enterPressed.bind(this)}
-
-
             />
         )
     }

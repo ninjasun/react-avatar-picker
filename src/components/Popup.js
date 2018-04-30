@@ -3,7 +3,7 @@ import onClickOutside from 'react-onclickoutside';
 
 import PropTypes from 'prop-types';
 
-const MOUSE_LEFT_CLICK = 0;
+import { MOUSE_LEFT_CLICK_EVENT } from "../constant/constant";
 
 class Popup extends Component {
     constructor(props) {
@@ -13,14 +13,10 @@ class Popup extends Component {
 
     handleClickOutside = event => {
         console.log("event: ", event.button)
-        if (event.button === MOUSE_LEFT_CLICK){
+        if (event.button === MOUSE_LEFT_CLICK_EVENT){
             if (this.props.styleClass === 'bouceIn') this.props.handlePopup();
         }
-
-
     }
-
-
 
     render() {
         let style = 'popup-container ' + this.props.styleClass ;

@@ -10,7 +10,7 @@ import UserProfile from './UserProfile';
 injectTapEventPlugin();
 
 
-const AJAX_CALL_DELAY = 1000;
+import { AJAX_CALL_DELAY } from '../constant/constant'
 
 class AvatarPicker extends Component {
     constructor(props) {
@@ -64,7 +64,7 @@ class AvatarPicker extends Component {
         let _self = this;
 
         if (this.state.modelActive.id === model.id){
-            console.log("SAME AVATAR")
+            //console.log("SAME AVATAR")
             this.setState({
                 styleClass:'fadeOut'
             })

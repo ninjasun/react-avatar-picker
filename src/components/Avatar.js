@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
+import { KEYCODE_ENTER, KEYCODE_ESC } from '../constant/constant'
 
-const KEYCODE_ENTER = 13;
-const KEYCODE_ESC = 27;
 
 class Avatar extends Component {
 
@@ -94,7 +93,5 @@ class Avatar extends Component {
             )
     }
 }
-
-
 
 export default Avatar;
