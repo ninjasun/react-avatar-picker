@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-
+import Spinner from './Spinner'
 import { KEYCODE_ENTER, KEYCODE_ESC } from '../constant/constant'
 
 
@@ -81,7 +81,7 @@ class Avatar extends Component {
                     tabIndex={this.state.isActive ? -1 : 0}
                     onKeyDown={this.keyPressed.bind(this)}
                 >
-                    <div className={this.state.isLoading ? 'spinner' : 'hide'} />
+                    {this.state.isLoading && <Spinner />}
 
                      <img
                         src={this.props.model.src}
