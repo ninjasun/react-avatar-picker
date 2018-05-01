@@ -10,6 +10,7 @@ import UserProfile from './UserProfile';
 
 
 import { AJAX_CALL_DELAY } from '../constant/constant'
+import AvatarList from "./AvatarList";
 
 injectTapEventPlugin();
 
@@ -100,22 +101,12 @@ class AvatarPicker extends Component {
                        styleClass={this.state.styleClass}
                        handlePopup={this.handlePopup}
                 >
-                    <ul className='avatar-list-container'>
-
-                        {this.props.avatarList.map((avatar) =>
-
-                            <li key={avatar.id}>
-                                <Avatar
-                                    model={avatar}
-                                    isActive={avatar.id === this.state.modelActive.id  ? true : false }
-                                    setAvatar={this.setAvatar}
-                                    isLoading={false}
-                                    handlePopup={this.handlePopup}
-                                />
-                            </li>
-                        )}
-
-                    </ul>
+                   <AvatarList
+                       avatarList={this.props.avatarList}
+                       avatarActiveId={this.state.modelActive.id}
+                       setAvatar={this.setAvatar}
+                       handlePopup={this.handlePopup}
+                   />
                 </Popup>
             </div>
         );
