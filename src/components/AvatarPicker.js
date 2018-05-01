@@ -7,10 +7,13 @@ import Popup from './Popup';
 import Avatar from './Avatar';
 import UserProfile from './UserProfile';
 
-injectTapEventPlugin();
 
 
 import { AJAX_CALL_DELAY } from '../constant/constant'
+
+injectTapEventPlugin();
+
+
 
 class AvatarPicker extends Component {
     constructor(props) {
