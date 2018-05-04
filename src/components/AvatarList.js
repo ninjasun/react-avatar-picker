@@ -1,26 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Spinner from './Spinner'
+import AvatarIcon from "./AvatarIcon";
 
-import Avatar from './Avatar';
+const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, onKeyDown}) => {
 
-const AvatarList = ({ avatarList, avatarActiveId, setAvatar, handlePopup}) =>  {
-    return(
-        <ul className='avatar-list-container'>
+        return (
+            <ul className={'avatar-list-container'}>
+                {avatarList.map((avatar) =>
+                    <li
+                        key={avatar.id}
+                        className={'avatar-container'}>
 
-            {avatarList.map((avatar) =>
+                        {isLoading && nextAvatar.id === avatar.id && <Spinner />}
 
-                <li key={avatar.id}>
-                    <Avatar
-                        model={avatar}
-                        isActive={avatar.id === avatarActiveId  ? true : false }
-                        setAvatar={setAvatar}
-                        isLoading={false}
-                        handlePopup={handlePopup}
-                    />
-                </li>
-            )}
+                        <AvatarIcon
+                            avatar={avatar}
+                            className={currentAvatar.id === avatar.id ? 'avatar selected': 'avatar'}
+                            tabIndex={0}
+                            onClick={onClick}
+                            onKeyDown={onKeyDown}
+                        />
+                    </li>
+                )}
+            </ul>
+        )
 
-        </ul>
-    )
-};
+    };
+
+AvatarList.proptypes = {
+    avatarList:PropTypes.arrayOf(PropTypes.object),
+    isLoading:PropTypes.bool,
+    currentAvatar:PropTypes.object,
+    nextAvatar:PropTypes.object,
+    onClick:PropTypes.func,
+    onKeyDown:PropTypes.func
+}
 
 export default AvatarList;

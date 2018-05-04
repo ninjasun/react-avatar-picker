@@ -17,7 +17,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AvatarPicker avatarList={avatarList} />
+          <div style={{height:100, backgroundColor:'white', width:'100%'}}>
+                <AvatarPicker avatarList={avatarList} />
+         </div>
       </div>
     );
   }

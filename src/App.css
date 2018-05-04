@@ -2,27 +2,9 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-}
-
-
-.user-profile{
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border:1px solid transparent;
-}
-
-.user-profile-hover:hover {
-  border-color: rgb(155, 160, 163);
-  cursor: pointer;
-}
-.user-profile:focus{
-  border-color: rgb(155, 160, 163);
-  cursor: pointer;
-  outline: none;
 
 }
+
 
 .popup-container{
   width:280px;
@@ -31,7 +13,9 @@
   text-align: center;
   padding: 14px;
   margin:auto;
+  z-index: 8000;
   margin-top:8px;
+  top:70px;
   display: flex;
   flex-direction: column;
   opacity:0;
@@ -47,14 +31,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.avatar-selected{
-  display:inline-block;
-  border:3px solid rgb(122, 161, 178);
-  float:left;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
+
 
 .avatar-list-container{
   list-style: none;
@@ -62,60 +39,75 @@
   margin:0;
 }
 
-.avatarContainer {
-  width: 60px;
-  height: 60px;
+.avatar-container {
   position: relative;
+  display:inline-block;
   margin-right:4px;
   float:left;
   border-radius: 50%;
   flex-grow:1;
-  border:3px solid transparent;
-
 }
-
-
-.avatarContainer:hover{
-  cursor:pointer;
-  opacity:.8;
-  border-color:rgb(155, 160, 163);
+.avatar-selected{
+  height: 60px;
+  width: 60px;
+  display:inline-block;
+  border-radius: 50%;
+  border:1px solid transparent;
 }
-
-.avatarContainer:focus{
-  cursor:pointer;
-  opacity:0.8;
-  border-color:rgb(155,160,163);
+.avatar-selected:hover{
+  cursor: pointer;
+  border-color: grey;
+}
+.avatar-selected:focus{
+  border-color: grey;
   outline: none;
 }
-
-.active{
-    border-color: rgb(122, 161, 178);
-}
-
-.active:hover{
-  cursor:auto;
-
-}
-
-
 .avatar{
   height: 60px;
-  display:inline-block;
   width: 60px;
+  display:inline-block;
   border-radius: 50%;
-  outline: none;
+  border:3px solid transparent;
 }
 
 .avatar:hover{
   opacity:0.8;
+  cursor:pointer;
   outline: none;
+  border-color: grey;
 }
 
-.active .avatar:hover{
-  opacity:1;
+.avatar:focus{
+  opacity:0.8;
+  outline: none;
+  border-color: grey;
 }
 
-.bouceIn{
+.avatar:active{
+  opacity:0.8;
+  outline: none;
+  border-color: grey;
+}
+
+
+.selected{
+  border:3px solid rgb(122, 161, 178);
+
+}
+.selected:hover{
+
+}
+.selected:focus{
+
+}
+
+.selected:active{
+
+}
+
+
+
+.bounce-in{
   opacity: 0;
   animation-name: bounceIn;
   animation-duration: 350ms;
@@ -123,14 +115,14 @@
   animation-fill-mode: forwards;
 }
 
-.fadeOut{
+.fade-out {
 
   animation-name: fadeOut;
   animation-duration: 150ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-}
 
+}
 @keyframes fadeOut{
   0%{
     opacity: 1;
@@ -162,7 +154,7 @@
   }
 }
 
-.arrow-up {
+.popup-triangle-up {
   width: 0;
   height: 0;
   position:absolute;
@@ -172,15 +164,13 @@
   border-right: 8px solid transparent;
   border-bottom: 8px solid  rgb(44, 48, 51);
 }
-.hide{
-  display:none;
-}
+
 
 .spinner {
   position:absolute;
   z-index: 5;
-  top:-3px;
-  left:-3px;
+  top:0;
+  left:0;
   border: 3px solid rgb(44, 48, 51);
   border-radius: 50%;
   border-top: 3px solid rgb(122, 161, 178);
