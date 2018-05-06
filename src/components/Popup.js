@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import onClickOutside from 'react-onclickoutside';
 
 import PropTypes from 'prop-types';
@@ -6,30 +6,30 @@ import PropTypes from 'prop-types';
 import { MOUSE_LEFT_CLICK_EVENT } from "../constant/constant";
 
 
-class Popup extends Component {
+const Popup = ({ className, children, handleClosePopup}) => {
 
-    handleClickOutside = event => {
+    const handleClickOutside = event => {
 
         if (event.button === MOUSE_LEFT_CLICK_EVENT){
-            this.props.handleClosePopup();
+            handleClosePopup();
         }
     };
-    render(){
 
         return (
 
-            <div className={ this.props.className } >
+            <div className={ className } >
                 <div className={'popup-triangle-up'}/>
                 <h1 className={'popup-title'}> Choose your avatar</h1>
-                {this.props.children}
+                {children}
             </div>
         );
-    }
-}
+    };
+
 
 Popup.proptypes = {
     className:PropTypes.string.isRequired,
-    handleClosePopup:PropTypes.func.isRequired
+    handleClosePopup:PropTypes.func.isRequired,
+    children:PropTypes.arrayOf(PropTypes.object)
 };
 
 export default onClickOutside(Popup);

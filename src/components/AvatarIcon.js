@@ -3,14 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const AvatarIcon  = ({avatar, className, onClick,  onKeyDown, tabIndex}) => {
+const AvatarIcon  = ({avatar, className, onClick,  onKeyDown}) => {
     return (
         <img
             src={avatar.src}
             alt={avatar.label}
             className={className}
             onClick={onClick.bind(this, avatar)}
-            tabIndex={tabIndex}
+            tabIndex={0}
             onKeyDown={onKeyDown.bind(this, avatar)}
         />
     )
@@ -19,9 +19,8 @@ const AvatarIcon  = ({avatar, className, onClick,  onKeyDown, tabIndex}) => {
 AvatarIcon.propTypes = {
     avatar: PropTypes.object.isRequired,
     className:PropTypes.string.isRequired,
-    onClick:PropTypes.func,
-    tabIndex:PropTypes.number,
-    onKeydown:PropTypes.func
+    onClick:PropTypes.func.isRequired,
+    onKeyDown:PropTypes.func.isRequired
 };
 
 

@@ -17,7 +17,6 @@ const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, 
                         <AvatarIcon
                             avatar={avatar}
                             className={currentAvatar.id === avatar.id ? 'avatar selected': 'avatar'}
-                            tabIndex={0}
                             onClick={onClick}
                             onKeyDown={onKeyDown}
                         />
@@ -29,12 +28,12 @@ const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, 
     };
 
 AvatarList.proptypes = {
-    avatarList:PropTypes.arrayOf(PropTypes.object),
-    isLoading:PropTypes.bool,
-    currentAvatar:PropTypes.object,
-    nextAvatar:PropTypes.object,
-    onClick:PropTypes.func,
-    onKeyDown:PropTypes.func
-}
+    avatarList:PropTypes.arrayOf(PropTypes.object).isRequired,
+    isLoading:PropTypes.bool.isRequired,
+    currentAvatar:PropTypes.object.isRequired,
+    nextAvatar:PropTypes.object.isRequired,
+    onClick:PropTypes.func.isRequired,
+    onKeyDown:PropTypes.func.isRequired
+};
 
 export default AvatarList;

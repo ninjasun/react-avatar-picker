@@ -10,6 +10,7 @@ import AvatarList from "./AvatarList";
 import AvatarIcon from './AvatarIcon';
 
 import {AJAX_CALL_DELAY, POPUP_FADE_OUT, KEYCODE_ENTER, KEYCODE_ESC} from '../constant/constant'
+import ErrorBoundary from "./ErrorBoundary";
 
 
 injectTapEventPlugin();
@@ -26,13 +27,12 @@ class AvatarPicker extends Component {
             popupNextAnimationClassName:''
         };
 
-        this.setAvatar = this.setAvatar.bind(this);
+        this.setCurrentAvatar = this.setCurrentAvatar.bind(this);
         this.handleOpenPopup = this.handleOpenPopup.bind(this);
         this.handleClosePopup = this.handleClosePopup.bind(this);
         this.onKeyDown = this.onKeyDown.bind(this);
         this.onKeyDownUpdateAvatar = this.onKeyDownUpdateAvatar.bind(this);
     }
-
 
     UNSAFE_componentWillMount(){
         this.setState({
@@ -40,13 +40,10 @@ class AvatarPicker extends Component {
             nextAvatar : this.props.avatarList[0]
         })
     }
-
-
     handleClosePopup(){
         const _self = this;
         if (_self.state.isPopupOpen){
             _self.setState({
-
                 popupNextAnimationClassName:'fade-out'
             });
             setTimeout(function(){
@@ -65,7 +62,7 @@ class AvatarPicker extends Component {
             })
         }
     }
-    setAvatar(avatar){
+    setCurrentAvatar(avatar){
 
         let _self = this;
 
@@ -83,7 +80,6 @@ class AvatarPicker extends Component {
             }
         , AJAX_CALL_DELAY)
     }
-
     onKeyDown(avatar, event){
         const _self = this;
         if (event.keyCode == KEYCODE_ENTER){
@@ -105,7 +101,7 @@ class AvatarPicker extends Component {
         const _self = this;
         if (event.keyCode == KEYCODE_ENTER){
          //   console.log("ENTER PRESSED ")
-            _self.setAvatar(avatar);
+            _self.setCurrentAvatar(avatar);
 
         }
         if (event.keyCode == KEYCODE_ESC){
@@ -113,37 +109,41 @@ class AvatarPicker extends Component {
                 _self.handleClosePopup()
         }
     }
+    renderPopup(){
+        const _self = this;
+        return(
+            <Popup
+                className={'popup-container ' + _self.state.popupNextAnimationClassName}
+                handleClosePopup={_self.handleClosePopup}
+            >
+                <AvatarList avatarList={_self.props.avatarList}
+                            currentAvatar={_self.state.currentAvatar}
+                            nextAvatar={_self.state.nextAvatar}
+                            onClick={_self.setCurrentAvatar}
+                            isLoading={_self.state.isLoading}
+                            onKeyDown={_self.onKeyDownUpdateAvatar}
+                />
 
+            </Popup>
+        )
+    }
     render() {
         let currentAvatar = this.state.currentAvatar;
         const _self = this;
         return (
-            <div className={'avatar-picker'}>
+            <ErrorBoundary>
+                <div className={'avatar-picker'}>
 
-                <AvatarIcon
-                    avatar={currentAvatar}
-                    onClick={this.handleOpenPopup}
-                    className={'avatar-selected'}
-                    tabIndex={0}
-                    onKeyDown={this.onKeyDown}
-                />
+                    <AvatarIcon
+                        avatar={currentAvatar}
+                        onClick={_self.handleOpenPopup}
+                        className={'avatar-selected'}
+                        onKeyDown={_self.onKeyDown}
+                    />
 
-                {this.state.isPopupOpen ?
-                    <Popup
-                        className={'popup-container ' + _self.state.popupNextAnimationClassName}
-                       handleClosePopup={_self.handleClosePopup}
-                    >
-                        <AvatarList avatarList={_self.props.avatarList}
-                            currentAvatar={_self.state.currentAvatar}
-                            nextAvatar={_self.state.nextAvatar}
-                            onClick={_self.setAvatar}
-                            isLoading={_self.state.isLoading}
-                            onKeyDown={_self.onKeyDownUpdateAvatar}
-                        />
-
-                </Popup>
-                    : ''}
-            </div>
+                    {_self.state.isPopupOpen ? _self.renderPopup() : ''}
+                </div>
+            </ErrorBoundary>
         );
     }
 }
