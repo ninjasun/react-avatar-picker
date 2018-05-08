@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Spinner from './Spinner'
 import AvatarIcon from "./AvatarIcon";
+import '../styles/avatar-list.css';
 
 const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, onKeyDown}) => {
 

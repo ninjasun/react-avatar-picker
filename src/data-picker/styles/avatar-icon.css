@@ -1,0 +1,59 @@
+
+.avatar-selected{
+    height: 60px;
+    width: 60px;
+    display:inline-block;
+    border-radius: 50%;
+    border:1px solid transparent;
+}
+.avatar-selected:hover{
+    cursor: pointer;
+    border-color: grey;
+}
+.avatar-selected:focus{
+    border-color: grey;
+    outline: none;
+}
+.avatar{
+    height: 60px;
+    width: 60px;
+    display:inline-block;
+    border-radius: 50%;
+    border:3px solid transparent;
+}
+
+.avatar:hover{
+    opacity:0.8;
+    cursor:pointer;
+    outline: none;
+    border-color: grey;
+}
+
+.avatar:focus{
+    opacity:0.8;
+    outline: none;
+    border-color: grey;
+}
+
+.avatar:active{
+    opacity:0.8;
+    outline: none;
+    border-color: grey;
+}
+
+
+.selected{
+    border:3px solid rgb(122, 161, 178);
+
+}
+.selected:hover{
+
+}
+.selected:focus{
+    outline:none;
+}
+
+.selected:active{
+    outline: none;
+}
+

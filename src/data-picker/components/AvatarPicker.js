@@ -1,23 +1,29 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
-import '../../../node_modules/normalize.css/normalize.css';
-import '../style/avatar-picker.css';
+
+import '../styles/avatar-picker.css';
 
 import Popup from './Popup';
 
 import AvatarList from "./AvatarList";
 import AvatarIcon from './AvatarIcon';
 
-import {AJAX_CALL_DELAY, POPUP_FADE_OUT, KEYCODE_ENTER, KEYCODE_ESC} from '../constant/constant'
+import {AJAX_CALL_DELAY,
+    POPUP_FADE_OUT,
+    KEYCODE_ENTER,
+    KEYCODE_ESC,
+    POPUP_LEAVING_CLASS,
+    POPUP_ENTERING_CLASS
+} from '../constant/constant'
 
 
 class AvatarPicker extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentAvatar:{},
-            nextAvatar : {},
+            currentAvatar : this.props.avatarList[0],
+            nextAvatar : this.props.avatarList[0],
             isPopupOpen:false,
             popupNextAnimationClassName:''
         };
@@ -29,17 +35,12 @@ class AvatarPicker extends Component {
         this.onKeyDownUpdateAvatar = this.onKeyDownUpdateAvatar.bind(this);
     }
 
-    UNSAFE_componentWillMount(){
-        this.setState({
-            currentAvatar : this.props.avatarList[0],
-            nextAvatar : this.props.avatarList[0]
-        })
-    }
+
     handleClosePopup(){
         const _self = this;
         if (_self.state.isPopupOpen){
             _self.setState({
-                popupNextAnimationClassName:'fade-out'
+                popupNextAnimationClassName:POPUP_LEAVING_CLASS
             });
             setTimeout(function(){
                 _self.setState({
@@ -48,62 +49,65 @@ class AvatarPicker extends Component {
             },POPUP_FADE_OUT)
         }
     }
+
+
     handleOpenPopup(){
         const _self = this;
         if (!_self.state.isPopupOpen){
             _self.setState({
                 isPopupOpen:true,
-                popupNextAnimationClassName:'bounce-in'
+                popupNextAnimationClassName:POPUP_ENTERING_CLASS
             })
         }
     }
+
+
     setCurrentAvatar(avatar){
-
-        let _self = this;
-
-      _self.setState({
+         let _self = this;
+         _self.setState({
               isLoading: true,
-                nextAvatar:avatar
-          }
-      );
+              nextAvatar:avatar
+           }
+        );
         setTimeout( () => {
                 _self.setState({
                     currentAvatar: avatar,
                     isLoading:false
                 });
                 _self.handleClosePopup()
-            }
-        , AJAX_CALL_DELAY)
+            }, AJAX_CALL_DELAY)
     }
+
+
     onKeyDown(avatar, event){
         const _self = this;
         if (event.keyCode === KEYCODE_ENTER){
-            //console.log("ENTER PRESSED ")
             if (!_self.state.isPopupOpen){
                 _self.handleOpenPopup()
             }
 
         }
         if (event.keyCode === KEYCODE_ESC){
-           // console.log("ESC PRESSED ")
             if (_self.state.isPopupOpen){
                 _self.handleClosePopup()
             }
         }
     }
+
+
     onKeyDownUpdateAvatar(avatar, event){
 
         const _self = this;
         if (event.keyCode === KEYCODE_ENTER){
-         //   console.log("ENTER PRESSED ")
             _self.setCurrentAvatar(avatar);
 
         }
         if (event.keyCode === KEYCODE_ESC){
-            //console.log("ESC PRESSED ")
                 _self.handleClosePopup()
         }
     }
+
+
     renderPopup(){
         const _self = this;
         return(
@@ -122,6 +126,8 @@ class AvatarPicker extends Component {
             </Popup>
         )
     }
+
+
     render() {
         let currentAvatar = this.state.currentAvatar;
         const _self = this;

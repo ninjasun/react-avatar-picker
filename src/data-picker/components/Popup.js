@@ -4,7 +4,7 @@ import onClickOutside from 'react-onclickoutside';
 import PropTypes from 'prop-types';
 
 import { MOUSE_LEFT_CLICK_EVENT } from "../constant/constant";
-
+import '../styles/popup.css';
 
 const Popup = ({ className, children, handleClosePopup}) => {
 
