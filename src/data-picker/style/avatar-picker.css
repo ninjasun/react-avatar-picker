@@ -16,6 +16,17 @@
     box-shadow: 2px 2px 10px rgb(102, 102, 102);
 }
 
+.popup-triangle-up {
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:-8px;
+    left: 146px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid  rgb(44, 48, 51);
+}
+
 .popup-title{
     color: rgb(249, 249, 249);
     font-size: 16px;
@@ -24,8 +35,6 @@
     margin-bottom: 14px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-
 
 .avatar-list-container{
     list-style: none;
@@ -92,14 +101,12 @@
 
 }
 .selected:focus{
-
+    outline:none;
 }
 
 .selected:active{
-
+    outline: none;
 }
-
-
 
 .bounce-in{
     opacity: 0;
@@ -110,7 +117,6 @@
 }
 
 .fade-out {
-
     animation-name: fadeOut;
     animation-duration: 150ms;
     animation-timing-function: linear;
@@ -148,16 +154,6 @@
     }
 }
 
-.popup-triangle-up {
-    width: 0;
-    height: 0;
-    position:absolute;
-    top:-8px;
-    left: 146px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid  rgb(44, 48, 51);
-}
 
 
 .spinner {
@@ -176,7 +172,7 @@
     animation: spin 2s linear infinite;
 }
 
-/* Safari */
+
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
