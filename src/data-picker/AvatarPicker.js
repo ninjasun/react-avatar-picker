@@ -16,6 +16,7 @@ import {
 
 import API_update_avatar from './API_MOCK.js';
 
+
 class AvatarPicker extends Component {
     constructor(props) {
         super(props);
@@ -67,20 +68,15 @@ class AvatarPicker extends Component {
               nextAvatar:avatar
            }
         );
-
-
         API_update_avatar(avatar)
             .then(res => {
-                console.log(res);
                 if (res.code === 200){
-
                     _self.setState({
                         currentAvatar: avatar,
                         isLoading:false
                     });
-                    _self.handleClosePopup();
+                    _self.handleClosePopup()
                 }
-
             })
             .catch((error) => {
                 console.log(error);
@@ -89,6 +85,7 @@ class AvatarPicker extends Component {
                 });
                 _self.handleClosePopup()
             });
+
     }
 
 

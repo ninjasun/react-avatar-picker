@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2e1605f-d3e1-427a-a257-3b36763af305" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data-picker/API_MOCK.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" afterDir="false" />
     </list>
@@ -24,17 +20,20 @@
       <file leaf-file-name="AvatarPicker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="250">
+              <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Avatar.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Avatar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="136">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -42,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="API_MOCK.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="API_MOCK.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker/API_MOCK.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -167,9 +166,9 @@
         <option value="$PROJECT_DIR$/src/data-picker/components/Spinner.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/AvatarPicker.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/AvatarList.js" />
-        <option value="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" />
-        <option value="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" />
         <option value="$PROJECT_DIR$/src/data-picker/API_MOCK.js" />
+        <option value="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" />
+        <option value="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" />
       </list>
     </option>
   </component>
@@ -313,12 +312,12 @@
       <workItem from="1525530856275" duration="6067000" />
       <workItem from="1525545851500" duration="5681000" />
       <workItem from="1525777233628" duration="5877000" />
-      <workItem from="1525784389511" duration="6853000" />
+      <workItem from="1525784389511" duration="7158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131554000" />
+    <option name="totallyTimeSpent" value="131859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -360,6 +359,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -577,23 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker/constant/constant.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -605,6 +590,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
