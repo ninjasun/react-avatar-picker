@@ -9,14 +9,12 @@ import './popup.css';
 const Popup = ({ className, children, handleClosePopup}) => {
 
     const handleClickOutside = event => {
-
         if (event.button === MOUSE_LEFT_CLICK_EVENT){
             handleClosePopup();
         }
     };
 
         return (
-
             <div className={ className } >
                 <div className={'popup-triangle-up'}/>
                 <h1 className={'popup-title'}> Choose your avatar</h1>

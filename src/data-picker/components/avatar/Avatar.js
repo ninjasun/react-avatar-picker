@@ -3,8 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './avatar.css';
 
-const Avatar  = ({avatar, className, onClick,  onKeyDown}) => {
-    return (
+const Avatar  = ({avatar, className, onClick,  onKeyDown}) =>
         <img
             src={avatar.src}
             alt={avatar.label}
@@ -13,8 +12,7 @@ const Avatar  = ({avatar, className, onClick,  onKeyDown}) => {
             tabIndex={0}
             onKeyDown={onKeyDown.bind(this, avatar, event)}
         />
-    )
-};
+
 
 Avatar.propTypes = {
     avatar: PropTypes.shape({

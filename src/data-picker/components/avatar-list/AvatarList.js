@@ -4,9 +4,7 @@ import Spinner from '../spinner/Spinner'
 import Avatar from "../avatar/Avatar";
 import './avatar-list.css';
 
-const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, onKeyDown}) => {
-
-        return (
+const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, onKeyDown}) =>
             <ul className={'avatar-list-container'}>
                 {avatarList.map((avatar) =>
                     <li
@@ -24,9 +22,7 @@ const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, 
                     </li>
                 )}
             </ul>
-        )
 
-    };
 
 AvatarList.proptypes = {
     avatarList:PropTypes.arrayOf(PropTypes.object).isRequired,

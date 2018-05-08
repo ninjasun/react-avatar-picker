@@ -12,7 +12,7 @@ import {
     KEYCODE_ESC,
     POPUP_LEAVING_CLASS,
     POPUP_ENTERING_CLASS
-} from './constant/constant'
+} from './constant/constant';
 
 import API_update_avatar from './API_MOCK.js';
 
@@ -132,7 +132,6 @@ class AvatarPicker extends Component {
                             isLoading={_self.state.isLoading}
                             onKeyDown={_self.onKeyDownUpdateAvatar}
                 />
-
             </Popup>
         )
     }
