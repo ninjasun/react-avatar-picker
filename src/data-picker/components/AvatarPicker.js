@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
-import 'normalize.css'
+import '../../../node_modules/normalize.css/normalize.css';
+import '../style/avatar-picker.css';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import Popup from './Popup';
 
 import AvatarList from "./AvatarList";
 import AvatarIcon from './AvatarIcon';
 
 import {AJAX_CALL_DELAY, POPUP_FADE_OUT, KEYCODE_ENTER, KEYCODE_ESC} from '../constant/constant'
-import ErrorBoundary from "./ErrorBoundary";
-
-
-injectTapEventPlugin();
-
 
 
 class AvatarPicker extends Component {
@@ -82,14 +77,14 @@ class AvatarPicker extends Component {
     }
     onKeyDown(avatar, event){
         const _self = this;
-        if (event.keyCode == KEYCODE_ENTER){
+        if (event.keyCode === KEYCODE_ENTER){
             //console.log("ENTER PRESSED ")
             if (!_self.state.isPopupOpen){
                 _self.handleOpenPopup()
             }
 
         }
-        if (event.keyCode == KEYCODE_ESC){
+        if (event.keyCode === KEYCODE_ESC){
            // console.log("ESC PRESSED ")
             if (_self.state.isPopupOpen){
                 _self.handleClosePopup()
@@ -99,12 +94,12 @@ class AvatarPicker extends Component {
     onKeyDownUpdateAvatar(avatar, event){
 
         const _self = this;
-        if (event.keyCode == KEYCODE_ENTER){
+        if (event.keyCode === KEYCODE_ENTER){
          //   console.log("ENTER PRESSED ")
             _self.setCurrentAvatar(avatar);
 
         }
-        if (event.keyCode == KEYCODE_ESC){
+        if (event.keyCode === KEYCODE_ESC){
             //console.log("ESC PRESSED ")
                 _self.handleClosePopup()
         }
@@ -131,25 +126,21 @@ class AvatarPicker extends Component {
         let currentAvatar = this.state.currentAvatar;
         const _self = this;
         return (
-            <ErrorBoundary>
                 <div className={'avatar-picker'}>
-
                     <AvatarIcon
                         avatar={currentAvatar}
                         onClick={_self.handleOpenPopup}
                         className={'avatar-selected'}
                         onKeyDown={_self.onKeyDown}
                     />
-
                     {_self.state.isPopupOpen ? _self.renderPopup() : ''}
                 </div>
-            </ErrorBoundary>
         );
     }
 }
 
 AvatarPicker.proptype = {
-    avatarList:PropTypes.arrayOf(PropTypes.object)
+    avatarList:PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default AvatarPicker;

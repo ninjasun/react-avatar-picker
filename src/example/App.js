@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AvatarPicker from './components/AvatarPicker';
+import AvatarPicker from '../data-picker/components/AvatarPicker';
 import './App.css';
 
 /* this list can grow up to 12 img */
