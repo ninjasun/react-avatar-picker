@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Spinner from './Spinner'
-import AvatarIcon from "./AvatarIcon";
-import '../styles/avatar-list.css';
+import Spinner from '../spinner/Spinner'
+import Avatar from "../avatar/Avatar";
+import './avatar-list.css';
 
 const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, onKeyDown}) => {
 
@@ -15,7 +15,7 @@ const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, 
 
                         {isLoading && nextAvatar.id === avatar.id && <Spinner />}
 
-                        <AvatarIcon
+                        <Avatar
                             avatar={avatar}
                             className={currentAvatar.id === avatar.id ? 'avatar selected': 'avatar'}
                             onClick={onClick}

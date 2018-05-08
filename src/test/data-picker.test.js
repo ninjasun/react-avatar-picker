@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AvatarPicker from "../data-picker/components/AvatarPicker";
+import AvatarPicker from "../data-picker/AvatarPicker";
 import renderer from 'react-test-renderer';
-import AvatarList from '../data-picker/components/AvatarList';
-import AvatarIcon from '../data-picker/components/AvatarIcon';
+import AvatarList from '../data-picker/components/avatar-list/AvatarList';
+import Avatar from '../data-picker/components/avatar/Avatar';
 
 
 const avatarList=     [
@@ -39,7 +39,7 @@ it('Avatar Picker  Component renders correctly', () => {
 *  TEST COMPONENT AVATARICON
 */
 
-it('AvatarIcon Component renders correctly', () => {
+it('Avatar Component renders correctly', () => {
     let props = {};
     props.avatar =   { "src": "avatar2.png", "label": "Avatar 2", "id": 2 };
     props.className = 'avatar';
@@ -47,7 +47,7 @@ it('AvatarIcon Component renders correctly', () => {
     props.onKeyDown = function(){};
 
     const tree = renderer.create(
-        <AvatarIcon
+        <Avatar
             avatar={props.avatar}
             className={props.className}
             onKeyDown={props.onKeyDown}

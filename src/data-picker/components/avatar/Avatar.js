@@ -1,9 +1,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/avatar-icon.css';
+import './avatar.css';
 
-const AvatarIcon  = ({avatar, className, onClick,  onKeyDown}) => {
+const Avatar  = ({avatar, className, onClick,  onKeyDown}) => {
     return (
         <img
             src={avatar.src}
@@ -16,7 +16,7 @@ const AvatarIcon  = ({avatar, className, onClick,  onKeyDown}) => {
     )
 };
 
-AvatarIcon.propTypes = {
+Avatar.propTypes = {
     avatar: PropTypes.object.isRequired,
     className:PropTypes.string.isRequired,
     onClick:PropTypes.func.isRequired,
@@ -24,4 +24,4 @@ AvatarIcon.propTypes = {
 };
 
 
-export default AvatarIcon;
+export default Avatar;

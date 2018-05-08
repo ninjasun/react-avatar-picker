@@ -91,11 +91,11 @@ exports[`Avatar Picker  Component renders correctly 1`] = `
     src="avatar1.png"
     tabIndex={0}
   />
-  
+
 </div>
 `;
 
-exports[`AvatarIcon Component renders correctly 1`] = `
+exports[`Avatar Component renders correctly 1`] = `
 <img
   alt="Avatar 2"
   className="avatar"

@@ -1,13 +1,10 @@
- import React, { Component } from 'react';
-
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import '../styles/avatar-picker.css';
-
-import Popup from './Popup';
-
-import AvatarList from "./AvatarList";
-import AvatarIcon from './AvatarIcon';
+import Popup from './components/popup/Popup';
+import AvatarList from "./components/avatar-list/AvatarList";
+import Avatar from './components/avatar/Avatar';
+ import './avatar-picker.css';
 
 import {AJAX_CALL_DELAY,
     POPUP_FADE_OUT,
@@ -15,7 +12,7 @@ import {AJAX_CALL_DELAY,
     KEYCODE_ESC,
     POPUP_LEAVING_CLASS,
     POPUP_ENTERING_CLASS
-} from '../constant/constant'
+} from './constant/constant'
 
 
 class AvatarPicker extends Component {
@@ -133,7 +130,7 @@ class AvatarPicker extends Component {
         const _self = this;
         return (
                 <div className={'avatar-picker'}>
-                    <AvatarIcon
+                    <Avatar
                         avatar={currentAvatar}
                         onClick={_self.handleOpenPopup}
                         className={'avatar-selected'}
