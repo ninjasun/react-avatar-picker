@@ -17,7 +17,11 @@ const Avatar  = ({avatar, className, onClick,  onKeyDown}) => {
 };
 
 Avatar.propTypes = {
-    avatar: PropTypes.object.isRequired,
+    avatar: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        src: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired
+    }).isRequired,
     className:PropTypes.string.isRequired,
     onClick:PropTypes.func.isRequired,
     onKeyDown:PropTypes.func.isRequired

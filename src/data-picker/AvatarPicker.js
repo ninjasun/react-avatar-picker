@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import Popup from './components/popup/Popup';
 import AvatarList from "./components/avatar-list/AvatarList";
 import Avatar from './components/avatar/Avatar';
- import './avatar-picker.css';
+import './avatar-picker.css';
 
-import {AJAX_CALL_DELAY,
+import {
     POPUP_FADE_OUT,
     KEYCODE_ENTER,
     KEYCODE_ESC,
@@ -14,6 +14,7 @@ import {AJAX_CALL_DELAY,
     POPUP_ENTERING_CLASS
 } from './constant/constant'
 
+import API_update_avatar from './API_MOCK.js';
 
 class AvatarPicker extends Component {
     constructor(props) {
@@ -66,13 +67,28 @@ class AvatarPicker extends Component {
               nextAvatar:avatar
            }
         );
-        setTimeout( () => {
+
+
+        API_update_avatar(avatar)
+            .then(res => {
+                console.log(res);
+                if (res.code === 200){
+
+                    _self.setState({
+                        currentAvatar: avatar,
+                        isLoading:false
+                    });
+                    _self.handleClosePopup();
+                }
+
+            })
+            .catch((error) => {
+                console.log(error);
                 _self.setState({
-                    currentAvatar: avatar,
-                    isLoading:false
+                    isLoading: false
                 });
                 _self.handleClosePopup()
-            }, AJAX_CALL_DELAY)
+            });
     }
 
 
