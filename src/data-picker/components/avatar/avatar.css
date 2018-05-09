@@ -1,19 +1,25 @@
 
-.avatar-selected{
+.current-avatar{
     height: 60px;
     width: 60px;
     display:inline-block;
     border-radius: 50%;
     border:1px solid transparent;
 }
-.avatar-selected:hover{
+.current-avatar:hover{
     cursor: pointer;
-    border-color: grey;
+    border-color: rgb(155, 160, 163);;
 }
-.avatar-selected:focus{
-    border-color: grey;
+.current-avatar:focus{
+    border-color: rgb(155, 160, 163);;
     outline: none;
 }
+
+.current-avatar:active{
+    border-color: rgb(155, 160, 163);;
+    outline: none;
+}
+
 .avatar{
     height: 60px;
     width: 60px;
@@ -26,19 +32,19 @@
     opacity:0.8;
     cursor:pointer;
     outline: none;
-    border-color: grey;
+    border-color: rgb(155, 160, 163);
 }
 
 .avatar:focus{
     opacity:0.8;
     outline: none;
-    border-color: grey;
+    border-color: rgb(155, 160, 163);
 }
 
 .avatar:active{
     opacity:0.8;
     outline: none;
-    border-color: grey;
+    border-color: rgb(155, 160, 163);
 }
 
 

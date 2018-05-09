@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Popup from './components/popup/Popup';
 import AvatarList from "./components/avatar-list/AvatarList";
 import Avatar from './components/avatar/Avatar';
-import './avatar-picker.css';
 
 import {
     POPUP_FADE_OUT,
@@ -85,7 +84,6 @@ class AvatarPicker extends Component {
                 });
                 _self.handleClosePopup()
             });
-
     }
 
 
@@ -145,7 +143,7 @@ class AvatarPicker extends Component {
                     <Avatar
                         avatar={currentAvatar}
                         onClick={_self.handleOpenPopup}
-                        className={'avatar-selected'}
+                        className={'current-avatar'}
                         onKeyDown={_self.onKeyDown}
                     />
                     {_self.state.isPopupOpen ? _self.renderPopup() : ''}

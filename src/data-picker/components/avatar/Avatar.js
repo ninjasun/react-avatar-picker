@@ -8,9 +8,9 @@ const Avatar  = ({avatar, className, onClick,  onKeyDown}) =>
             src={avatar.src}
             alt={avatar.label}
             className={className}
-            onClick={onClick.bind(this, avatar, event)}
+            onClick={onClick.bind(this, avatar)}
             tabIndex={0}
-            onKeyDown={onKeyDown.bind(this, avatar, event)}
+            onKeyDown={onKeyDown.bind(this, avatar)}
         />
 
 

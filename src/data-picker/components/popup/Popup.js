@@ -6,22 +6,25 @@ import PropTypes from 'prop-types';
 import { MOUSE_LEFT_CLICK_EVENT } from "../../constant/constant";
 import './popup.css';
 
-const Popup = ({ className, children, handleClosePopup}) => {
+class Popup extends React.Component  {
 
-    const handleClickOutside = event => {
-        if (event.button === MOUSE_LEFT_CLICK_EVENT){
-            handleClosePopup();
+    handleClickOutside = event => {
+        console.log("Clicked! ", event)
+        if (event.button === MOUSE_LEFT_CLICK_EVENT) {
+            this.props.handleClosePopup();
         }
     };
 
+    render() {
         return (
-            <div className={ className } >
+            <div className={ this.props.className}>
                 <div className={'popup-triangle-up'}/>
                 <h1 className={'popup-title'}> Choose your avatar</h1>
-                {children}
+                { this.props.children}
             </div>
         );
-    };
+    }
+}
 
 
 Popup.proptypes = {

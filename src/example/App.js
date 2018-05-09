@@ -10,8 +10,8 @@ const avatarList =
         { "src": "avatar3.png", "label": "Avatar 3", "id": 3 },
         { "src": "avatar4.png", "label": "Avatar 4", "id": 4 },
         { "src": "avatar5.png", "label": "Avatar 5", "id": 5 },
-        { "src": "avatar6.png", "label": "Avatar 6", "id": 6 }
-    ]
+        { "src": "avatar6.png", "label": "Avatar 6", "id": 6 },
+    ];
 
 class App extends Component {
   render() {

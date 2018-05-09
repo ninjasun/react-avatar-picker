@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AvatarPicker from "../data-picker/AvatarPicker";
 import renderer from 'react-test-renderer';
+
+import AvatarPicker from "../data-picker/AvatarPicker";
 import AvatarList from '../data-picker/components/avatar-list/AvatarList';
 import Avatar from '../data-picker/components/avatar/Avatar';
 
 
-const avatarList=     [
+const avatarList = [
     { "src": "avatar1.png", "label": "Avatar 1", "id": 1 },
     { "src": "avatar2.png", "label": "Avatar 2", "id": 2 },
     { "src": "avatar3.png", "label": "Avatar 3", "id": 3 },
@@ -14,13 +15,6 @@ const avatarList=     [
     { "src": "avatar5.png", "label": "Avatar 5", "id": 5 },
     { "src": "avatar6.png", "label": "Avatar 6", "id": 6 }
 ];
-
-
-it('Avatar Picker renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<AvatarPicker avatarList={avatarList} />, div);
-    ReactDOM.unmountComponentAtNode(div);
-});
 
 
 /*
