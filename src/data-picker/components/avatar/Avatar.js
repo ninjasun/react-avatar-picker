@@ -3,17 +3,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './avatar.css';
 
-const Avatar  = ({avatar, className, onClick,  onKeyDown}) =>
-        <img
-            src={avatar.src}
-            alt={avatar.label}
-            className={className}
-            onClick={onClick.bind(this, avatar)}
-            tabIndex={0}
-            onKeyDown={onKeyDown.bind(this, avatar)}
+class Avatar  extends React.Component {
+    onClick(event){
+        if (this.props.eventEnabled){
+            this.props.onClick( this.props.avatar, event);
+        }
+    }
+    onKeyDown(event){
+        if (this.props.eventEnabled){
+            this.props.onKeyDown( this.props.avatar, event);
+        }
+    }
+    render(){
+        return (
+            <img
+             src={this.props.avatar.src}
+             alt={this.props.avatar.label}
+             className={this.props.className}
+             onClick={this.onClick.bind(this)}
+             tabIndex={0}
+             onKeyDown={this.onKeyDown.bind(this)}
         />
+    )
+}
 
-
+}
 Avatar.propTypes = {
     avatar: PropTypes.shape({
         id: PropTypes.number.isRequired,
@@ -21,6 +35,7 @@ Avatar.propTypes = {
         label: PropTypes.string.isRequired
     }).isRequired,
     className:PropTypes.string.isRequired,
+    eventEnabled:PropTypes.bool,
     onClick:PropTypes.func.isRequired,
     onKeyDown:PropTypes.func.isRequired
 };

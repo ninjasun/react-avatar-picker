@@ -17,6 +17,7 @@ const AvatarList = ({avatarList, isLoading, currentAvatar, nextAvatar, onClick, 
                             avatar={avatar}
                             className={currentAvatar.id === avatar.id ? 'avatar selected': 'avatar'}
                             onClick={onClick}
+                            eventEnabled={!isLoading}
                             onKeyDown={onKeyDown}
                         />
                     </li>

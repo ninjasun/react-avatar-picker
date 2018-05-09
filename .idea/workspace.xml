@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2e1605f-d3e1-427a-a257-3b36763af305" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data-picker.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/data-picker.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AvatarPicker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AvatarPicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="112" column="43" lean-forward="true" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+            <state relative-caret-position="272">
+              <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -34,8 +33,8 @@
       <file leaf-file-name="AvatarList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -58,8 +57,8 @@
       <file leaf-file-name="Avatar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="459">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -67,10 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-picker.test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data-picker.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="459">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -217,16 +217,16 @@
         <option value="$PROJECT_DIR$/src/data-picker/components/AvatarPicker.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/AvatarList.js" />
         <option value="$PROJECT_DIR$/src/data-picker/API_MOCK.js" />
-        <option value="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" />
         <option value="$PROJECT_DIR$/src/example/index.css" />
         <option value="$PROJECT_DIR$/src/example/App.css" />
-        <option value="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" />
         <option value="$PROJECT_DIR$/src/example/App.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/avatar/avatar.css" />
-        <option value="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/popup/Popup.js" />
         <option value="$PROJECT_DIR$/src/test/data-picker.test.js" />
         <option value="$PROJECT_DIR$/src/data-picker.test.js" />
+        <option value="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" />
+        <option value="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" />
+        <option value="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" />
       </list>
     </option>
   </component>
@@ -316,15 +316,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/example" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/data-picker" />
       <recent name="$PROJECT_DIR$/src/data-picker/components/popup" />
       <recent name="$PROJECT_DIR$/src/data-picker/components/avatar-list" />
       <recent name="$PROJECT_DIR$/src/data-picker/components/avatar" />
-      <recent name="$PROJECT_DIR$/src/data-picker/components/spinner" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -362,12 +362,12 @@
       <workItem from="1525530856275" duration="6067000" />
       <workItem from="1525545851500" duration="5681000" />
       <workItem from="1525777233628" duration="5877000" />
-      <workItem from="1525784389511" duration="13053000" />
+      <workItem from="1525784389511" duration="14020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137754000" />
+    <option name="totallyTimeSpent" value="138721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -621,40 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker/components/popup/Popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="112" column="43" lean-forward="true" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -673,9 +643,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="459">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -104,7 +104,7 @@ class AvatarPicker extends Component {
 
 
     onKeyDownUpdateAvatar(avatar, event){
-
+       
         const _self = this;
         if (event.keyCode === KEYCODE_ENTER){
             _self.setCurrentAvatar(avatar);
@@ -145,6 +145,7 @@ class AvatarPicker extends Component {
                         onClick={_self.handleOpenPopup}
                         className={'current-avatar'}
                         onKeyDown={_self.onKeyDown}
+                        eventEnabled={!this.state.isLoading}
                     />
                     {_self.state.isPopupOpen ? _self.renderPopup() : ''}
                 </div>
