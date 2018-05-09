@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 
-import AvatarPicker from "../data-picker/AvatarPicker";
-import AvatarList from '../data-picker/components/avatar-list/AvatarList';
-import Avatar from '../data-picker/components/avatar/Avatar';
+import AvatarPicker from "./data-picker/AvatarPicker";
+import AvatarList from './data-picker/components/avatar-list/AvatarList';
+import Avatar from './data-picker/components/avatar/Avatar';
 
 
 const avatarList = [
@@ -15,7 +14,6 @@ const avatarList = [
     { "src": "avatar5.png", "label": "Avatar 5", "id": 5 },
     { "src": "avatar6.png", "label": "Avatar 6", "id": 6 }
 ];
-
 
 /*
 *  TEST COMPONENT AVATAR PICKER
