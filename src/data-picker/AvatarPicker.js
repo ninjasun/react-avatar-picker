@@ -104,7 +104,6 @@ class AvatarPicker extends Component {
 
 
     onKeyDownUpdateAvatar(avatar, event){
-       
         const _self = this;
         if (event.keyCode === KEYCODE_ENTER){
             _self.setCurrentAvatar(avatar);

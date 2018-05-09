@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2e1605f-d3e1-427a-a257-3b36763af305" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-picker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +24,8 @@
       <file leaf-file-name="AvatarPicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+            <state relative-caret-position="568">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -34,10 +37,19 @@
         <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -54,11 +66,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="357">
+                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Avatar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#1#27#0" expanded="true" />
               </folding>
@@ -69,61 +93,10 @@
       <file leaf-file-name="data-picker.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data-picker.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="289">
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="react-onclickoutside.cjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-onclickoutside/dist/react-onclickoutside.cjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="351" selection-start-line="351" selection-end-line="351" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-onclickoutside/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/example/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,7 +114,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>circle</find>
       <find>arr</find>
       <find>title</find>
       <find>avatar-list-container</find>
@@ -171,6 +143,7 @@
       <find>impo</find>
       <find>avatar-selected</find>
       <find>console</find>
+      <find>environment.setup</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/constant.js" />
         <option value="$PROJECT_DIR$/src/components/Spinner.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
@@ -204,7 +176,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/test/data-picker.test.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/data-picker/style/popup.css" />
         <option value="$PROJECT_DIR$/src/data-picker/components/Popup.js" />
         <option value="$PROJECT_DIR$/src/data-picker/style/avatar-icon.css" />
@@ -223,9 +194,11 @@
         <option value="$PROJECT_DIR$/src/data-picker/components/avatar/avatar.css" />
         <option value="$PROJECT_DIR$/src/data-picker/components/popup/Popup.js" />
         <option value="$PROJECT_DIR$/src/test/data-picker.test.js" />
-        <option value="$PROJECT_DIR$/src/data-picker.test.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js" />
         <option value="$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js" />
+        <option value="$PROJECT_DIR$/src/data-picker.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" />
       </list>
     </option>
@@ -298,7 +271,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data-picker" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="avatar-list" type="462c0819:PsiDirectoryNode" />
+              <item name="popup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="colony-join-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="colony-join-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data-picker" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,6 +293,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -339,6 +320,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/src" />
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -362,12 +351,12 @@
       <workItem from="1525530856275" duration="6067000" />
       <workItem from="1525545851500" duration="5681000" />
       <workItem from="1525777233628" duration="5877000" />
-      <workItem from="1525784389511" duration="14020000" />
+      <workItem from="1525784389511" duration="18101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138721000" />
+    <option name="totallyTimeSpent" value="142802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -376,11 +365,11 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13908356" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32991803" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32889345" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57016575" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5696721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.16905738" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -405,28 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/components/popup/Popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker/components/popup/Popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -495,19 +462,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="31" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker/components/popup/popup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -614,10 +568,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jest-runner/build/test_worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jest-runner/build/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jest-runner/build/run_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-picker.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="357">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -631,20 +632,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker.test.js">
+    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="323">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -654,27 +652,17 @@
     <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar/Avatar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#1#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-picker/components/avatar-list/AvatarList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-picker/AvatarPicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+        <state relative-caret-position="568">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

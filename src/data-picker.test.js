@@ -37,12 +37,13 @@ it('Avatar Component renders correctly', () => {
     props.className = 'avatar';
     props.onClick = function(){};
     props.onKeyDown = function(){};
-
+    props.eventEnabled = true;
     const tree = renderer.create(
         <Avatar
             avatar={props.avatar}
             className={props.className}
             onKeyDown={props.onKeyDown}
+            eventEnabled={props.eventEnabled}
             onClick={props.onClick}
         />
     ).toJSON();
