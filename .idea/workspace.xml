@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2e1605f-d3e1-427a-a257-3b36763af305" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-picker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-picker/AvatarPicker.js" afterDir="false" />
-    </list>
+    <list default="true" id="d2e1605f-d3e1-427a-a257-3b36763af305" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -351,12 +344,12 @@
       <workItem from="1525530856275" duration="6067000" />
       <workItem from="1525545851500" duration="5681000" />
       <workItem from="1525777233628" duration="5877000" />
-      <workItem from="1525784389511" duration="18101000" />
+      <workItem from="1525784389511" duration="18190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142802000" />
+    <option name="totallyTimeSpent" value="142891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
