@@ -1,4 +1,6 @@
-
+.avatar-picker-container{
+    padding: 20px;
+}
 
 .avatar-list-container{
     list-style: none;
@@ -9,16 +11,16 @@
 .avatar-container {
     position: relative;
     display:inline-block;
-    margin-right:4px;
+    margin-right: 4px;
     float:left;
     border-radius: 50%;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 
 .popup-container{
-    width:280px;
-    border-radius:2px;
+    width: 280px;
+    border-radius: 2px;
     background-color: rgb(44, 48, 51);
     text-align: center;
     padding: 14px;
@@ -105,7 +107,7 @@
     width: 60px;
     display:inline-block;
     border-radius: 50%;
-    border:1px solid transparent;
+    border: 1px solid transparent;
 }
 .current-avatar:hover{
     cursor: pointer;
@@ -126,7 +128,7 @@
     width: 60px;
     display:inline-block;
     border-radius: 50%;
-    border:3px solid transparent;
+    border: 3px solid transparent;
 }
 
 .avatar:hover{
@@ -137,20 +139,20 @@
 }
 
 .avatar:focus{
-    opacity:0.8;
+    opacity: 0.8;
     outline: none;
     border-color: rgb(155, 160, 163);
 }
 
 .avatar:active{
-    opacity:0.8;
+    opacity: 0.8;
     outline: none;
     border-color: rgb(155, 160, 163);
 }
 
 
 .selected{
-    border:3px solid rgb(122, 161, 178);
+    border: 3px solid rgb(122, 161, 178);
 
 }
 .selected:hover{
@@ -170,8 +172,8 @@
 .spinner {
     position:absolute;
     z-index: 5;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     border: 3px solid rgb(44, 48, 51);
     border-radius: 50%;
     border-top: 3px solid rgb(122, 161, 178);

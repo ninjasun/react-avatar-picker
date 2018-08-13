@@ -6,8 +6,7 @@ import PropTypes from 'prop-types';
 import { MOUSE_LEFT_CLICK_EVENT } from "../constants/";
 
 
-const Popup = ( props ) => {
-
+function Popup( props ){
         return (
             <div className={props.className}>
                 <div className="popup-triangle-up" />

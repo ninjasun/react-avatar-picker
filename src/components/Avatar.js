@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Avatar  = (props) => {
+function Avatar(props){
    function onClick(event){
         if (props.eventEnabled){
             props.onClick( props.avatar, event );
@@ -26,6 +26,7 @@ const Avatar  = (props) => {
         />
     )
 }
+
 
 Avatar.propTypes = {
     props: PropTypes.shape({
