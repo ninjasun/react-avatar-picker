@@ -2,8 +2,8 @@
   "name": "colony-join-test",
   "version": "0.1.0",
   "private": true,
-   "author":"davide mezzetti",
-  "email":"davide.mezzetti@hotmail.it",
+  "author": "davide mezzetti",
+  "email": "davide.mezzetti@hotmail.it",
   "dependencies": {
     "axios": "^0.18.0",
     "prop-types": "^15.6.1",
