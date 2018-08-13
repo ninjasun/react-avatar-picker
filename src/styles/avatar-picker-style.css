@@ -1,5 +1,7 @@
 .avatar-picker-container{
-    padding: 20px;
+    height: 300px;
+    padding: 30px;
+    background-color: white;
 }
 
 .avatar-list-container{
