@@ -3,8 +3,7 @@ import onClickOutside from 'react-onclickoutside';
 
 import PropTypes from 'prop-types';
 
-import { MOUSE_LEFT_CLICK_EVENT } from "../../constant/constant";
-import './popup.css';
+import { MOUSE_LEFT_CLICK_EVENT } from "../constants/";
 
 
 class Popup extends React.Component  {

@@ -1,4 +1,4 @@
-import { AJAX_CALL_DELAY } from './constant/constant';
+import { AJAX_CALL_DELAY } from '../constants/';
 
 export default async function API_update_avatar(avatar){
     if (avatar){

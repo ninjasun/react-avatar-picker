@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Spinner from '../spinner/Spinner'
-import Avatar from "../avatar/Avatar";
-import './avatar-list.css';
+
+import { Avatar, Spinner } from "../components";
+
 
 const AvatarList = ( props ) => {
     const { avatarList, isLoading, currentAvatar, nextAvatar,  ...other } = props;

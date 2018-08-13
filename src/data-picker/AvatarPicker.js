@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 import PropTypes from 'prop-types';
 
-import Popup from './components/popup/Popup';
-import AvatarList from "./components/avatarList/AvatarList";
-import Avatar from './components/avatar/Avatar';
+import { Popup, Avatar, } from '../components/';
+import AvatarList from "./AvatarList";
 
 import {
     POPUP_FADE_OUT,
     KEYCODE_ENTER,
     KEYCODE_ESC,
     POPUP_LEAVING_CLASS,
-    POPUP_ENTERING_CLASS
-} from './constant/constant';
+    POPUP_ENTERING_CLASS,
+} from '../constants/';
+
+import '../styles/avatar-picker-style.css';
 
 import API_update_avatar from './API_MOCK.js';
 
@@ -22,8 +23,8 @@ class AvatarPicker extends Component {
         this.state = {
             currentAvatar : this.props.avatarList[0],
             nextAvatar : this.props.avatarList[0],
-            isPopupOpen:false,
-            popupNextAnimationClassName:'',
+            isPopupOpen: false,
+            popupNextAnimationClassName: '',
             isLoading : false,
         };
     }
@@ -32,7 +33,7 @@ class AvatarPicker extends Component {
     handleClosePopup = () => {
         if (this.state.isPopupOpen){
             this.setState({
-                popupNextAnimationClassName:POPUP_LEAVING_CLASS
+                popupNextAnimationClassName: POPUP_LEAVING_CLASS
             });
             const _self = this;
             setTimeout (function(){
@@ -47,8 +48,8 @@ class AvatarPicker extends Component {
     handleOpenPopup = () => {
         if (!this.state.isPopupOpen){
             this.setState({
-                isPopupOpen:true,
-                popupNextAnimationClassName:POPUP_ENTERING_CLASS
+                isPopupOpen: true,
+                popupNextAnimationClassName: POPUP_ENTERING_CLASS
             })
         }
     }
@@ -57,7 +58,7 @@ class AvatarPicker extends Component {
     setCurrentAvatar = (avatar) =>{
          this.setState({
               isLoading: true,
-              nextAvatar:avatar
+              nextAvatar: avatar
            }
         );
         const _self = this; 
@@ -66,7 +67,7 @@ class AvatarPicker extends Component {
                 if (res.code === 200){
                     _self.setState({
                         currentAvatar: avatar,
-                        isLoading:false
+                        isLoading: false
                     });
                     _self.handleClosePopup()
                 }
@@ -107,7 +108,7 @@ class AvatarPicker extends Component {
     }
 
 
-    renderPopup = () =>{
+    renderPopup = () => {
         return(
             <Popup
                 className={'popup-container ' + this.state.popupNextAnimationClassName}
@@ -126,7 +127,7 @@ class AvatarPicker extends Component {
 
 
     render() {
-        const currentAvatar = this.state.currentAvatar;
+        const { currentAvatar, isLoading, isPopupOpen } = this.state;
         
         return (
                 <div className='avatar-picker-container'>
@@ -135,16 +136,18 @@ class AvatarPicker extends Component {
                         onClick={this.handleOpenPopup}
                         className="current-avatar"
                         onKeyDown={this.onKeyDown}
-                        eventEnabled={!this.state.isLoading}
+                        eventEnabled={!isLoading}
                     />
-                    {this.state.isPopupOpen ? this.renderPopup() : ''}
+                    { isPopupOpen ? this.renderPopup() : '' }
                 </div>
         );
     }
 }
 
+
 AvatarPicker.proptype = {
     avatarList:PropTypes.arrayOf(PropTypes.object).isRequired
 };
+
 
 export default AvatarPicker;
